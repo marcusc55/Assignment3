@@ -13,8 +13,10 @@
                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endfor %}
             </ul>
+            <a href="/bookmark/category/{{category_name_url}}/add_page/"> Add new page in {{category_name}} </a>
             {% else %}
                 <strong>No pages currently in category.</strong>
+                <a href="/bookmark/category/{{category_name_url}}/add_page/"> Add new page in {{category_name}} </a>
             {% endif %}
         {% else %}
             The specified category {{ category_name }} does not exist!
