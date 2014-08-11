@@ -39,7 +39,7 @@ def category(request, category_name_url):
 
     # Create a context dictionary which we can pass to the template rendering engine.
     # We start by containing the name of the category passed by the user.
-    context_dict = {'category_name': category_name}
+    context_dict = {'category_name': category_name, 'category_name_url':category_name_url}
 
     try:
         # Can we find a category with the given name?
